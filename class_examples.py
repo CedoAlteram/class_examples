@@ -14,8 +14,9 @@ class Shape:
     def perimeter(self):
         return 2 * self.x + 2 * self.y
 
-    def describe(self):
+    def describe(self, text):
         self.description = text
+        return text + " and this was added by a def"
 
     def authorName(self, text):
         self.author = text
@@ -33,5 +34,5 @@ Shape1 = Shape(x,y)
 print(Shape1.area())
 print(Shape1.perimeter())
 print(Shape1.scaleSize(0.5))
-
+print(Shape1.describe("this is the describe class"))
 print("all clear go home")
