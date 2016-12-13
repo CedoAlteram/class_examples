@@ -1,4 +1,4 @@
-import sys, os
+import sys
 #An example of a class
 class Shape:
 
@@ -16,7 +16,6 @@ class Shape:
 
     def describe(self):
         self.description = text
-
 
     def authorName(self, text):
         self.author = text
