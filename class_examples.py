@@ -23,11 +23,12 @@ class Shape:
     def scaleSize(self, scale):
         self.x = self.x * scale
         self.y = self.y * scale
+        return self.x, self.y
 
 
 Shape1 = Shape(10,10)
-Shape2 = Shape(20,20)
-Shape3 = Shape(30,30)
+Shape2 = Shape(10,10)
+Shape3 = Shape(10,10)
 
 print(Shape1.area())
 print(Shape2.perimeter())
