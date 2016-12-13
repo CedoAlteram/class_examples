@@ -1,3 +1,4 @@
+import sys, os
 #An example of a class
 class Shape:
 
@@ -25,13 +26,13 @@ class Shape:
         self.y = self.y * scale
         return self.x, self.y
 
+x = int(sys.argv[1])
+y = int(sys.argv[2])
 
-Shape1 = Shape(10,10)
-Shape2 = Shape(10,10)
-Shape3 = Shape(10,10)
+Shape1 = Shape(x,y)
 
 print(Shape1.area())
-print(Shape2.perimeter())
-print(Shape3.scaleSize(0.5))
+print(Shape1.perimeter())
+print(Shape1.scaleSize(0.5))
 
 print("all clear go home")
